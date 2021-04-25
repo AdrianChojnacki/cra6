@@ -34,7 +34,7 @@ class App extends Component {
     return (
       <div className="app">
         <ButtonFetchUsers click={this.handleDataFetch} />
-        {users ? <UsersList users={users} /> : users}
+        {users.length > 0 ? <UsersList users={users} /> : users}
       </div>
     );
   }
